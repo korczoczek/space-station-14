@@ -15,7 +15,7 @@ public sealed class PopupOnTriggerSystem : XOnTriggerSystem<PopupOnTriggerCompon
     {
         EntityUid user;
 
-        if(args.User != null)
+        if (args.User != null)
         {
             user = Identity.Entity(args.User.Value, EntityManager);
         }
