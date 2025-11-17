@@ -1,0 +1,7 @@
+- type: entity
+  # Plays the state animation then disappears with no fade or swing
+  id: AnimationOnTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+    - type: AnimationOnTrigger
