@@ -1,0 +1,18 @@
+#random cake spawner, spawns a cake from the random cake table
+
+- type: entity
+  id: RandomFoodCake
+  name: random food spawner
+  suffix: Cake
+  parent: MarkerBase
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Consumable/Food/Baked/cake.rsi
+        state: plain
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: FoodRandomCakeTable
